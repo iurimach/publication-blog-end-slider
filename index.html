@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Auto Slider end blog page</title>
+
+  
+    <meta name="description" content="აქ წერ რას სთავზობ, მა; შეიძინე სპორტული ფეხსცმლი,">
+    <meta name="keywords"  content= " ფეხსცმლი, ბურთი, ბადე,">  <!-- რის დასერჩვაზე ამოაგოს შენი გვერდი-->
+    <meta name="robots" content="index, follow "> <!-- google, ბოტობს შეეძლოთ ნახვა, და ინფოს აღება-->
+    <link rel="canonical" href="შენი საიტის მისამართი, https/www.sport.ge."><!-- gogolma რო არ აურიოს შენი საიტის მისმრთი-->
+    <meta name="author" content="iuri"> <!--პოსტის ავტორი-->
+   
+    <meta name="og:title" content="ფეხსცმელები/ინგლისურადაც"> <!--საიტის ლინკის დაკოპირეისას რა ინფო გამოჩნდეს ლინკთანერტად სახელში დაეწერბა რასც აქ გავწერ-->
+    <meta name="og:image" content="src/baner.png">
+    <meta name="og:description" content="ფეხსცმელები/ინგლისურადაც">
+
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="blogstyle.css">
+  <link rel="stylesheet" href="response.css">
+  
+</head>
+<body>
+
+  
+  <nav class="mein_navbar" id="nav">
+    <ul class="navul">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about" class="hidden">About</a></li>
+        <li><a href="#services" class="hidden">Services</a></li>
+        <li><a href="contact.html" class="hidden">Contact</a></li>
+    </ul>
+        <div  id="searchnav">
+          <input type="text" placeholder="Search..." class="searchinput"  id="searchInput">
+          <button type="submit" class="searchbt" onclick="searchAndFilter()">Search</button>
+        </div>
+      
+   
+  </nav>
+  
+ 
+
+  <div class="slider-container">
+    <div class="slider" id="slider">
+      
+      
+    </div>
+  </div>
+
+  <!-- აქ იწყება ფოტოს დამატეების და წასლის ფორმები -->
+
+
+
+  <div class="opendialogdiv">
+    <button  class="button-3" onclick="openDialog()" id="opendialogbt"> Add slide </button>
+  </div>
+
+  <div id="dialog" style="height: 500px !important; overflow: overlay;">
+    <div class="dialogheader"> 
+
+      <button onclick="closeDialog()" class="dialogbt">X</button>
+    </div>
+    <div class="dialogbody"> 
+          <form id="imageForm">
+            <input type="file"  id="imageInput" accept="image/*">
+            <button type="submit"  class="button-3" id="postButton">Post</button>
+        </form>
+
+        <p class="info_foto">Number of images on the slide: <span id="imageCount">0</span></p>
+
+        <form id="deleteForm">
+            <label for="deleteIndex">Enter index of image to delete:</label>
+            <input type="number" id="deleteIndex" min="0" placeholder="0">
+            <button type="submit" class="button-32">Delete</button>
+        </form>
+    </div>
+    
+  </div>
+
+  <!-- ----------------blog dialog--  add- -->
+  
+
+  <div class="opendialogdiv" id="blogdialog" >
+    <div class="dialogheader"> 
+      <button onclick="closeblogdialog()" class="dialogbt">X</button>
+    </div>
+    <div class="blogdialogbody">
+      <textarea rows="4" cols="50" placeholder="Enter your post. . . ." id="postInputblog" class="blogtextarea"></textarea>
+      <div class="blogdialogbody_bootons">
+        <input type="file" id="imageInputblog" accept="image/*">
+        <button onclick="addPost()" class="button-3">Post</button>
+      </div>
+      
+    </div>
+  </div>
+  <!-- აქ ბლოგის გამოყვენბის შემდეგ  კოდი-->
+  <div class="blogheader"><h1> Blog Page</h1> </div>
+  <div class=blogbuttons> 
+    <button onclick="openblogDialog()" class="button-3">Add Blog</button>
+    <button onclick="deleteAllPosts()" class="button-32 blogalldel ">Delete All Posts</button>
+  </div>
+  <div id="blog"> </div>
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        <p>blog</p>
+        <p>blog</p>
+        <p>blog</p>
+      </div>
+      <div>
+        <p>Name 2</p>
+        <p>Name 2</p>
+        <p>Name 2</p>
+      </div>
+      <div>
+        <p>Contact</p>
+        <p>Goete,s strasse</p>
+        <p>Goete,s strasse </p>
+      </div>
+    </div>
+    <div class="footer-gutter">
+      <p> 2024 © iurimach, Copyright </p>
+    </div>
+  </footer>
+
+
+  <script src="app.js"></script>
+  <script src="blog.js"></script>
+</body>
+
+</html>

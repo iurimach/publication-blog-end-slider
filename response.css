@@ -1,0 +1,58 @@
+@media  (max-width: 991px) {
+
+    #dialog { 
+       max-width: 400px;
+    }
+    #navbarNavDropdown{
+        display: flex;
+    }
+    .navul{
+        max-width:300px ;
+    }
+    #searchnav{
+        width:250px;
+      
+      }
+    #blogdialog{
+        width: 450px;
+    }
+
+    
+
+}
+
+@media  (max-width: 501px) {
+    .hidden{
+        display: none;
+    }
+    .navul{
+        max-width:70px ;
+    }
+    .dellpostone{
+        margin-right: 30%;
+    }
+    #blogdialog{
+        width: 300px;
+    }
+    .blogbuttons{
+        max-width: 300px;
+
+    }
+    #blogdialog{
+        height: auto;
+    }
+    #dialog{
+        max-width: 300px;
+    }
+    #deleteForm {
+        max-width: 150px;
+        height: 110px;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    #deleteIndex{
+       width: 60px;
+        padding-left: 80px;
+    }
+}

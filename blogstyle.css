@@ -1,0 +1,90 @@
+/* ----------------------blog dialog style --------------------*/
+
+#blogdialog{
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    background-color: #F0F3FF;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 750px;
+    height: 550px;
+    border-radius: 22px;
+    transform: translate(-50%, -50%);
+  }
+  
+  .blogdialogbody{
+    margin-top: 70px;
+    width: 100%;
+    
+  }
+.blogheader{
+    margin: 0 auto;
+    width: 85%;
+    height: 70px;
+    background-color: rgb(28, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+   
+}
+.blogheader>h1{
+    font-size: 30px;
+    color: white;
+    
+}
+.blogalldel{
+    width: 160px;
+}
+.blogbuttons{
+    margin: 0 auto;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+#postInput{
+    height: 200px;
+}
+
+.blogtextarea{
+    width: 96%;
+    height: 100px;
+    
+}
+.blogdialogbody_bootons{
+    width: 95%;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+/* -------------------blog div style---------------- */
+#blog{
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.blogimgfromjs{
+    border-radius: 10px;
+}
+.dellpostone{
+    background-color: red;
+    color: white;
+    border: 3px solid red;
+    border-radius: 5px;
+    margin-right: 60%;
+    margin-bottom: 30px;
+    margin-top: 90px;
+    opacity: 0.5;
+}
+.dellpostone:hover{
+    opacity: 1.1;
+}
+#blog>div>img{
+    width: 98%;
+    border-radius:8px;
+}
