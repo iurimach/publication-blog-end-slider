@@ -62,7 +62,7 @@ a{
 
   .slider {
     width: 800px;  /*პროპორციულად უნდა შეაცმირო ისე არიევა, 500 ზეც მუშობს */
-   
+    height: 500px;
     display: flex;
     transition: transform 0.5s ease-in-out;
   }
