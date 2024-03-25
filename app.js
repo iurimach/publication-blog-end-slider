@@ -98,7 +98,7 @@ function  playdefaultslide() {
     });
   }
   // Automatically move the slider every 1 seconds (adjust as needed)
-  setInterval(moveSlider,1000);
+  setInterval(moveSlider,2000);
 };
 playdefaultslide()
 
