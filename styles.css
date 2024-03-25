@@ -32,6 +32,7 @@ a{
   width: 140px;
   height: 30px;
   border-radius: 8px;
+  
 }
 .searchbt{
   width: 70px;
@@ -46,8 +47,8 @@ a{
 
   /*--------------------- slider style */
 
-  .slider-container {
-    max-width: 700px;
+  .slider-container { 
+    max-width: 900px;  /*პროპორციულად უნდა შეაცმირო ისე არიევა, 700 ზეც მუშობს */
     margin: 0 auto;
     overflow: hidden;
     border: 2px solid #097965;
@@ -60,15 +61,15 @@ a{
   }
 
   .slider {
-    width: 500px;
-    height:500px ;
+    width: 800px;  /*პროპორციულად უნდა შეაცმირო ისე არიევა, 500 ზეც მუშობს */
+   
     display: flex;
     transition: transform 0.5s ease-in-out;
   }
 
   .box {
 
-    width: 500px;
+    width: 800px; /*პროპორციულად უნდა შეაცმირო ისე არიევა, 500 ზეც მუშობს */
     height: 500px;
     flex-shrink: 0;
     display: flex;
@@ -81,7 +82,7 @@ a{
   }
   .boximg{
     width: 100%;
-    height: 600px;
+    height: 500px;
     object-fit: cover; 
   }
  /* თუ რამოდნიმე 3,5 იტემის გამოცენა და ტრილი გინდა ეს წაუშლე  box1 მთლიანდ */
@@ -272,22 +273,152 @@ input[type=number]:focus {
 /*--------------- footer */
 
 
-footer {
-  background-color: #000;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  margin-top: 40px;
-}
+/* footer  */
 
-.footer-content {
+
+.fboxwraper{
+    
+  width: 100%;
+  height: 350px;
+  background-color: #000000;
+  position: relative;
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center; 
+  flex-wrap: wrap;
+  margin-top: 60px;
+  
+}
+.fconteiner{
+  max-width: 1200px;
+  width: 90%;
+  height: auto;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  
+  
+  
+  
 }
 
-.footer-gutter {
-  font-size: 12px;
+.footerbox1 , .footerbox2 ,  .footerbox3{
+  color: white;
+  width: 220px;
+  list-style: none;
+  height: auto;
+  
+
+}
+.footerbox2 ,  .footerbox3, .footerbox4{
+  padding-left: 30px;
+
+}
+
+.footerbox1 h3 , .footerbox2 h3 , .footerbox4 h3 {
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+.footerbox1 li , .footerbox2 li{
+  padding-top: 15px;
+  
+}
+.footerbox2 li a{
+  color: #ffffff;
+}
+.footerbox3{
+  font-size: 22px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ficon{
+  margin-top: 30px;
+  color: #ffffff;
+}
+.ficon a{
+  
+  color: #ffffff;
+}
+#icon2{
+  padding-left: 10px;
+  
+}
+.ficon i{
+  font-size: 18px;
+  
+}
+.footerbox4{
+  color: #ffffff;
+  max-width: 300px;
+  flex-direction: column;
+ 
+ 
+  
+}
+
+.footerbox4 input{
+  flex-direction: column;
+  margin-top: 30px;
+  height: 30px;
+  outline: none;
+  width: 90%;
+}
+.footerbox4 button{
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid silver;
+ max-width: 80px;
+  height: 35px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+.footerbox4 button a{
+  text-decoration: none;
+  color: #ffffff;
+  
+}
+
+/** section 6 */
+
+.footerend{
+  width: 100%;
+  height: 100px;
+  background-color: #000000;
+  position: relative;
+  
+  
+
+  
+}
+
+.footerend::before{
+  content: "";
+  width: 100%;
+  height: 1.5px;
+  background-color: rgba(25, 32, 32, 0.753);
+  display: inline-block;
+}
+.footerend i, .footerend p{
+  color: #ffffff;
+  margin-left: 10px;
+  
+ 
+  
+}
+
+.copyright{
+  display: flex;
+  position: absolute;
+  top: 50%;
+  margin-left: 42%;
+  box-sizing: border-box;
+
 }
 
 
@@ -297,6 +428,8 @@ footer {
   background-color: #0e0d0d;
   padding: 20px;
   text-align: center;
+  margin-top: 60px;
+  color: white
 }
 
 .contact-info {
